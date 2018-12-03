@@ -1,8 +1,8 @@
-baseURL = "https://thawing-tor-36976.herokuapp.com/myapp/"
+baseURL = "https://thawing-tor-36976.herokuapp.com/profile/"
 languageCode = "en-us"
 title = "My Site"
 theme = "hugo-now-ui"
-publishDir="myapp/templates"
+#publishDir="myapp/templates"
 
 googleAnalytics = ""
 disqusShortname = ""
