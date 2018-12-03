@@ -1,1 +1,1 @@
-FLASK_APP=portfolio_data_app.py
+FLASK_APP=portfolio_data_app
