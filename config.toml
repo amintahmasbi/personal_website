@@ -2,7 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "My Site"
 theme = "hugo-now-ui"
-publishDir="templates"
+publishDir="myapp/templates"
 
 googleAnalytics = ""
 disqusShortname = ""
