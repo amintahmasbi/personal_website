@@ -24,7 +24,8 @@ def index():
         for src in soup.find_all(src=re.compile("\.\/")):
             src['src'] = src['src'].replace("./","templates/",1)
         for div in soup.find_all("div", class_="page-header-image", style=re.compile("\/img")):
-            div['style'] = div['style'].replace("/img","templates/img",1)
+            if 'templates' not in div['style']:
+                div['style'] = div['style'].replace("/img","templates/img",1)
     with open(html_path, "w") as html_file:
         html_file.write(str(soup))
     # Find the div with the class "full_name", show text
