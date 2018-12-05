@@ -3,13 +3,17 @@ languageCode = "en-us"
 title = "My Site"
 theme = "hugo-now-ui"
 publishDir="myapp/templates"
-relativeURLs=true
+#relativeURLs=true
 
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 #enableGitInfo = true
+disableKinds = ["section", "taxonomy", "taxonomyTerm"]
 
+#enableGitInfo = true
+#publishDir = "../docs"
+#themesDir = "../.."
 
 [[menu.main]]
     name = "Components"
