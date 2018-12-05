@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Site</title>
+    <title>My title on Amin Tahmasbi</title>
     <link>https://thawing-tor-36976.herokuapp.com/</link>
-    <description>Recent content on My Site</description>
+    <description>Recent content in My title on Amin Tahmasbi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
@@ -45,7 +45,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/login/</guid>
-      <description>          Get Started   Create Account    Need Help?     </description>
+      <description> Get StartedCreate AccountNeed Help?</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/profile/</guid>
-      <description> Follow      About me An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range. My Portfolio                             </description>
+      <description>FollowAbout meAn artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.My Portfolio </description>
     </item>
     
     <item>
@@ -63,10 +63,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/components/</guid>
-      <description>Now UI Kit. A beautiful Bootstrap 4 UI kit. Yours free.  Designed by . Coded by . --          Basic Elements Buttons Pick your style
-Default Round  With Icon    Simple   Pick your size
-Small Regular Large   Pick your color
-Default Primary Info Success Warning Danger Neutral   Links Default Primary Info Success Warning Danger    Inputs Form Controls</description>
+      <description>Now UI Kit.A beautiful Bootstrap 4 UI kit. Yours free.Designed by. Coded by. --Basic ElementsButtonsPick your style
+DefaultRound With IconSimplePick your size
+SmallRegularLargePick your color
+DefaultPrimaryInfoSuccessWarningDangerNeutralLinksDefaultPrimaryInfoSuccessWarningDangerInputsForm Controls</description>
     </item>
     
     <item>
@@ -75,7 +75,7 @@ Default Primary Info Success Warning Danger Neutral   Links Default Primary Info
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/landing/</guid>
-      <description>Who are we? According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDC lead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.    &#34;Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly&#34;</description>
+      <description>Who are we?According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDC lead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.&#34;Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly&#34;</description>
     </item>
     
     <item>

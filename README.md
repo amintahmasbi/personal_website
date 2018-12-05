@@ -33,30 +33,40 @@
    $ echo 'theme = "hugo-now-ui"' >> config.toml
    ```
 
-7. Check and modify the content with `$ hugo server -D`
+7. Develop before deploy. Hugo does not remove generated files before building. 
 
-8. Run `hugo` to deploy to the `public` folder (or any personalized `publishDir` in `config.toml` file)
+8. Start a server that builds draft content to check and modify the content with e.g., a `dev/` directory:
+	```shell
+	$ hugo server -D -d dev
+	```
+9. Run `hugo` to deploy to the `public` folder (or any personalized `publishDir` in `config.toml` file)
 
-9. dd
+10. FLask
 
-10. ddd
+11. Flask
 
-11. ddd
+12. Flask
 
-12. Install the heroku command line tools and login:
+13. Install the heroku command line tools and login:
 
     ```shell
     (venv) $ sudo snap install --classic heroku
     (venv) $ heroku login
     ```
 
-13. create a heroku app: (name is optional)
+14. Clone an existing app Or 
+
+    ```bash
+    (venv) $ heroku git:clone --recurse-submodules -a (my-unique-app-name)
+    ```
+
+15. Create a heroku app: (name is optional)
 
     ```shell
     (venv) $ heroku create (my-unique-app-name)	
     ```
 
-14. Find and add the `hugo` buildpack:
+16. Find and add the `hugo` buildpack:
 
     ```shell
     $ heroku buildpacks:search hugo
@@ -64,7 +74,7 @@
     $ heroku config:set HUGO_VERSION=0.52
     ```
 
-15. Finally, deploy!
+17. Finally, deploy!
 
     ```shell
     $ git push heroku master
