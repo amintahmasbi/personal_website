@@ -1,102 +1,120 @@
 baseURL = "https://thawing-tor-36976.herokuapp.com/"
-languageCode = "en-us"
+LanguageCode = "en-us"
 title = "Amin Tahmasbi"
 theme = "hugo-now-ui"
 publishDir="myapp/templates"
-#relativeURLs=true
 
+enableGitInfo = true
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
-#enableGitInfo = true
 disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 
-#enableGitInfo = true
-#publishDir = "../docs"
+# [permalinks]
+    # post = "/:year/:month/:day/:slug/"
+# DefaultContentLanguage = "en"
 
 [[menu.main]]
-    name = "Components"
-    url = "/components/"
-    pre = "<i class='now-ui-icons design_app'></i>"
+    name = "About"
+    url = "#about"
+    pre = "<i class='fas fa-info'></i>"
     weight = 1
 [[menu.main]]
-    name = "Landing"
-    url = "/landing/"
-    pre = "<i class='now-ui-icons business_bank'></i>"
-    weight = 1
-[[menu.main]]
-    name = "Profile"
-    url = "/profile/"
-    pre = "<i class='now-ui-icons users_single-02'></i>"
+    name = "Education"
+    url = "#education"
+    pre = "<i class='fas fa-graduation-cap'></i>"
     weight = 2
 [[menu.main]]
-    name = "Signup"
-    pre = "<i class='now-ui-icons clothes_tie-bow'></i>"
-    url = "/login/"
+    name = "Skills"
+    url = "#skills"
+    pre = "<i class='fas fa-code'></i>"
     weight = 3
+[[menu.main]]
+    name = "Experience"
+    url = "#experience"
+    pre = "<i class='far fa-building'></i>"
+    weight = 4
+
+[[menu.main]]
+    name = "Projects"
+    url = "#projects"
+    pre = "<i class='fas fa-project-diagram'></i>"
+    weight = 5
+
+[[menu.main]]
+    name = "Publications"
+    url = "#publications"
+    pre = "<i class='fas fa-book-open'></i>"
+    weight = 6
 
 [[menu.main]]
       name = "GitHub"
-      weight = 4
-      pre = "<i class='now-ui-icons arrows-1_share-66'></i>"
+      weight = 7
+      pre = "<i class='fab fa-github'></i>"
       identifier = "github"
       post = "external"
-      url = "https://github.com/amintahmasbi"
+      url = ""
 
-[[menu.main]]
-    name = "Dropdown"
-    pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
-    url = "#"
-    weight = 5
-    identifier = "dropdown"
-[[menu.main]]
-    name = "Template"
-    pre = "<i class='now-ui-icons files_paper'></i>"
-    url = "/template/"
-    weight = 1
-    parent = "dropdown"
-[[menu.main]]
-    name = "Posts"
-    pre = "<i class='now-ui-icons ui-1_calendar-60'></i>"
-    url = "/post/"
-    weight = 2
-    parent = "dropdown"
-[[menu.main]]
-    name = "Tags"
-    pre = "<i class='now-ui-icons shopping_tag-content'></i>"
-    url = "/tags/"
-    weight = 2
-    parent = "dropdown"
+# [[menu.main]]
+#     name = "Dropdown"
+#     pre = "<i class='now-ui-icons ui-1_settings-gear-63'></i>"
+#     url = "#"
+#     weight = 5
+#     identifier = "dropdown"
+# [[menu.main]]
+#     name = "Template"
+#     pre = "<i class='now-ui-icons files_paper'></i>"
+#     url = "/template/"
+#     weight = 1
+#     parent = "dropdown"
+# [[menu.main]]
+#     name = "Posts"
+#     pre = "<i class='now-ui-icons ui-1_calendar-60'></i>"
+#     url = "/post/"
+#     weight = 2
+#     parent = "dropdown"
+# [[menu.main]]
+#     name = "Tags"
+#     pre = "<i class='now-ui-icons shopping_tag-content'></i>"
+#     url = "/tags/"
+#     weight = 2
+#     parent = "dropdown"
 
 [[menu.footer]]
     identifier = "twitter"
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "https://twitter.com/#"
+    pre = "<i class='fab fa-twitter'></i>"
+    url = "https://twitter.com/amin_tahmasbi"
     weight = 1
 [[menu.footer]]
     identifier = "github"
-    pre = "<i class='fa fa-github'></i>"
-    url = "https://github.com/#"
+    pre = "<i class='fab fa-github'></i>"
+    url = "https://github.com/amintahmasbi"
     weight = 2
+
+[[menu.footer]]
+    identifier = "linkedin"
+    pre = "<i class='fab fa-linkedin'></i>"
+    url = "https://www.linkedin.com/in/amin-tahmasbi"
+    weight = 3
+
 [[menu.footer]]
     identifier = "copyright"
     name = "MIT"
     pre = "<i class='fa fa-balance-scale'></i>"
-    url = "https://spdx.org/licenses/MIT"
-    weight = 3
+    url = "https://mit-license.org/"
+    weight = 4
 
 
 [params]
     AuthorName = "Amin Tahmasbi"
-    # background = "/img/bg11.jpg"
+    background = "/img/DSC_6327.jpg"
     tint = "black" # orange
     custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Wed, Dec 5, 2018"
-    description = "My personal website (built through Hugo and Bootstrap4.)"
+    description = "My personal website (built with Hugo and Bootstrap v4.)"
 
     # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+    highlight_version = "9.13.1"
+    highlight_languages = ["bash", "cpp", "cmake", "dockerfile", "json", "python"]
+    highlight_style = "github" #doesn't work!
