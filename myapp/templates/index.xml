@@ -6,7 +6,7 @@
     <description>Recent content in My title on Amin Tahmasbi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 22:58:13 -0500</lastBuildDate>
     
 	<atom:link href="https://thawing-tor-36976.herokuapp.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -70,22 +70,22 @@ Default Primary Info Success Warning Danger Neutral   Links Default Primary Info
     </item>
     
     <item>
+      <title>Here Here Write the best title for your page.</title>
+      <link>https://thawing-tor-36976.herokuapp.com/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/template/</guid>
+      <description>Here comes the body of the page&amp;hellip;
+def qsort1(list): &amp;quot;&amp;quot;&amp;quot;Quicksort using list comprehensions&amp;quot;&amp;quot;&amp;quot; if list == []: return [] else: pivot = list[0] lesser = qsort1([x for x in list[1:] if x &amp;lt; pivot]) greater = qsort1([x for x in list[1:] if x &amp;gt;= pivot]) return lesser + [pivot] + greater numbers = (1,6,3,32,85,23,9,123,23,336) print qsort1(numbers)  </description>
+    </item>
+    
+    <item>
       <title>Write the best title for your page.</title>
       <link>https://thawing-tor-36976.herokuapp.com/landing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/landing/</guid>
       <description>Who are we? According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDC lead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.    &#34;Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly&#34;</description>
-    </item>
-    
-    <item>
-      <title>Write the best title for your page.</title>
-      <link>https://thawing-tor-36976.herokuapp.com/template/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thawing-tor-36976.herokuapp.com/template/</guid>
-      <description>Here comes the body of the page&amp;hellip;
-## Look, a code block! library(tidyverse) 1 + 1  </description>
     </item>
     
   </channel>
