@@ -1,0 +1,38 @@
+<head>
+    <meta charset="utf-8" />
+    {{/* <link rel="apple-touch-icon" sizes="76x76" href="{{ "img/apple-icon.png" | relURL }}"> */}}
+    <link rel="icon" type="image/png" href="{{ "img/favicon.ico" | relURL }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>{{.Site.Title}}</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- CSS Files -->
+    {{/* <link href="{{ "css/bootstrap.min.css" | relURL }}" rel="stylesheet" /> */}}
+    <!-- Prefer Online CDN over local files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link href="{{ "css/now-ui-kit.css?v=1.2.0" | relURL }}" rel="stylesheet" />
+    <link href="{{ "css/demo.css" | relURL }}" rel="stylesheet" />
+
+    <!-- Code highlighting style -->
+    {{ if  not .Params.nocode }}
+      {{ $v := .Site.Params.highlight_version | default "9.12.0" }}
+      {{ $site_code_style := .Site.Params.highlight_style }}
+      {{ $page_code_style := .Params.highlight_style }}
+
+      {{if .Site.Params.highlight_style }}
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/styles/{{ $site_code_style }}.min.css">
+      {{ else if .Params.highlight_style }}
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/styles/{{ $page_code_style }}.min.css">
+      {{ else }}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/styles/default.min.css">
+      {{ end }}
+    {{end}}
+
+  {{ range .Site.Params.custom_css -}}
+    <link rel="stylesheet" href="{{ . | absURL }}">
+  {{- end }}
+</head>

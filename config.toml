@@ -53,7 +53,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
       pre = "<i class='fab fa-github'></i>"
       identifier = "github"
       post = "external"
-      url = ""
+      url = "https://github.com/amintahmasbi"
 
 # [[menu.main]]
 #     name = "Dropdown"
@@ -107,8 +107,8 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 
 [params]
     AuthorName = "Amin Tahmasbi"
-    background = "/img/DSC_6327.jpg"
-    tint = "black" # orange
+    background = "/img/YellowStone_gayse.jpg"
+    # tint = "black" # Only orange
     custom_css = ["css/highlight.min.css"]
     custom_js = []
     date_format = "Wed, Dec 5, 2018"
