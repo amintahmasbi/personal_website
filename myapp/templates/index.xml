@@ -12,12 +12,15 @@
     
     
     <item>
-      <title>about me</title>
+      <title>About Me</title>
       <link>https://thawing-tor-36976.herokuapp.com/home/about/</link>
       <pubDate>Mon, 10 Dec 2018 23:28:05 -0500</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/home/about/</guid>
-      <description>A research scientist and software engineer with hands-on experience in autonomous vehicles and vehicle communications. My educational background is in in the context of intelligent transportation systems such as AD, ADAS, and crash avoidance systems. I have more than four years of experience in connected vehicles (V2X), Artificial Intelligence, ADAS, vehicle communications, machine learning, cyber-physical systems, and embedded systems.</description>
+      <description>A research scientist and software engineer working on self-driving cars and connected vehicles.
+I love everything about computer science and math.
+My educational background and expertise are in Artificial Intelligence, vehicle communications, and machine learning.
+Currently, I am part of the connected and automated vehicle group at Honda R&amp;amp;D Americas. My role includes research and development of perception-based applications for Autonomous Driving and Advanced Driver-Assistance Systems in the context of intelligent transportation systems.</description>
     </item>
     
     <item>
@@ -54,7 +57,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/login/</guid>
-      <description>          Get Started   Create Account    Need Help?     </description>
+      <description> Get StartedCreate AccountNeed Help?</description>
     </item>
     
     <item>
@@ -63,7 +66,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/profile/</guid>
-      <description> Follow      About me An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range. My Portfolio                             </description>
+      <description>FollowAbout meAn artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.My Portfolio </description>
     </item>
     
     <item>
@@ -72,10 +75,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/components/</guid>
-      <description>Now UI Kit. A beautiful Bootstrap 4 UI kit. Yours free.  Designed by . Coded by . --          Basic Elements Buttons Pick your style
-Default Round  With Icon    Simple   Pick your size
-Small Regular Large   Pick your color
-Default Primary Info Success Warning Danger Neutral   Links Default Primary Info Success Warning Danger    Inputs Form Controls</description>
+      <description>Now UI Kit.A beautiful Bootstrap 4 UI kit. Yours free.Designed by. Coded by. --Basic ElementsButtonsPick your style
+DefaultRound With IconSimplePick your size
+SmallRegularLargePick your color
+DefaultPrimaryInfoSuccessWarningDangerNeutralLinksDefaultPrimaryInfoSuccessWarningDangerInputsForm Controls</description>
     </item>
     
     <item>
@@ -94,7 +97,7 @@ def qsort1(list): &amp;quot;&amp;quot;&amp;quot;Quicksort using list comprehensi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/landing/</guid>
-      <description>Who are we? According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDC lead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.    &#34;Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly&#34;</description>
+      <description>Who are we?According to the National Oceanic and Atmospheric Administration, Ted, Scambos, NSIDC lead scentist, puts the potentially record low maximum sea ice extent tihs year down to low ice extent in the Pacific and a late drop in ice extent in the Barents Sea.&#34;Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly&#34;</description>
     </item>
     
   </channel>

@@ -12,12 +12,15 @@
     
     
     <item>
-      <title>about me</title>
+      <title>About Me</title>
       <link>https://thawing-tor-36976.herokuapp.com/home/about/</link>
       <pubDate>Mon, 10 Dec 2018 23:28:05 -0500</pubDate>
       
       <guid>https://thawing-tor-36976.herokuapp.com/home/about/</guid>
-      <description>A research scientist and software engineer with hands-on experience in autonomous vehicles and vehicle communications. My educational background is in in the context of intelligent transportation systems such as AD, ADAS, and crash avoidance systems. I have more than four years of experience in connected vehicles (V2X), Artificial Intelligence, ADAS, vehicle communications, machine learning, cyber-physical systems, and embedded systems.</description>
+      <description>A research scientist and software engineer working on self-driving cars and connected vehicles.
+I love everything about computer science and math.
+My educational background and expertise are in Artificial Intelligence, vehicle communications, and machine learning.
+Currently, I am part of the connected and automated vehicle group at Honda R&amp;amp;D Americas. My role includes research and development of perception-based applications for Autonomous Driving and Advanced Driver-Assistance Systems in the context of intelligent transportation systems.</description>
     </item>
     
   </channel>
