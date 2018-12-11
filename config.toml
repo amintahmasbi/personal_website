@@ -107,7 +107,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 
 [params]
     AuthorName = "Amin Tahmasbi"
-    background = "/img/YellowStone_gayse.jpg"
+    background = "/img/Florida_bay.jpg" #"/img/Yellowstone_gayser.jpg"
     # tint = "black" # Only orange
     custom_css = ["css/highlight.min.css"]
     custom_js = []
