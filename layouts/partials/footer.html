@@ -4,10 +4,15 @@
 	    <ul>
 	    {{ range .Site.Menus.footer }}
         <li>
-          <a href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
+          <a target="_blank" href="{{ .URL | relURL }}">{{ .Pre }} {{ .Name }}</a>
         </li>
       {{ end }}
       </ul>
     </nav>
+    <div class="copyright" id="copyright">
+      Developed by {{ $.Site.Params.AuthorName }}<br>
+      {{if .IsHome}}{{ dateFormat "Monday, Jan 2, 2006" .Page.Lastmod }}{{end}}
+
+    </div>
   </div>
 </footer>

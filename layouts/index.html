@@ -4,37 +4,55 @@
 
 {{partial "head" . }}
 
-<body class="{{ .Params.class | default "profile-page" }} sidebar-collapse">
+<body class="profile-page sidebar-collapse">
+
   {{ partial "nav" . }}
 
-  <div class="{{ .Params.wrapper | default "wrapper" }}">
 
-    <div class="page-header page-header-small clear-filter" filter-color="orange">
-      <div class="page-header-image" data-parallax="false" style="background-image: url( '{{ (.Param "background" | default "img/header.jpg") | absURL }}' );">
+  <div class="wrapper">
+
+    <div class="page-header  clear-filter" filter-color="orange">
+
+      <div class="page-header-image" data-parallax="true" style="background-image: url( '{{ (.Param "background" | default "img/header.jpg") | absURL }}' );">
       </div>
 
+      <!-- {{ block "index_title" . }}
+      {{ end }} -->
       <div class="container">
         <div class="content-center">
           <div class="photo-container">
             <img src="/img/Profile_pic.jpg" alt="">
           </div>
-          <h3 class="title">I'm {{ .Site.Params.AuthorName }},</h3>
-          <p class="category"> Research Scientist and Software Engineer<br>
-            PhD in computer science working on autonomous vehicles
+          <h2 class="title">
+            {{with .Title }}
+            {{ . | safeHTML }}
+            {{end}}
+          </h2>
+          <p class="category">
+            {{with .Params.description }}
+            {{ . | safeHTML }}
+            {{ end }}
           </p>
         </div>
       </div>
 
     </div>
-    <div class="{{ .Params.section | default "section"}}">
-      <div class="container">
 
-        {{ block "body" . }}
-        {{ end }}
+    <div class="main">
 
-      </div>
+
+      {{ partial "about.html" . }}
+      {{ partial "education.html" . }}
+      {{/* {{ partial "skills.html" . }}
+      {{ partial "experience.html" . }}
+      {{ partial "projects.html" . }}
+      {{ partial "publications.html" . }} */}}
+
+
     </div>
+
     {{ partial "footer" . }}
+
   </div>
 </body>
 {{partial "javascript" . }}

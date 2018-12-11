@@ -1,0 +1,22 @@
+<div id="about" class="section">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12 col-lg-8">
+        <h2 class="title">
+          {{ with $.Site.GetPage "page" "about.md" }}
+            {{with .Title }}
+              {{ . | safeHTML }}
+            {{end}}
+          {{ end }}
+        </h2>
+          <h5 class="description">
+            {{ with $.Site.GetPage "page" "about.md" }}
+              {{with .Content }}
+                {{ . | safeHTML }}
+              {{ end }}
+            {{ end }}
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>

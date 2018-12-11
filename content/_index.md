@@ -1,6 +1,6 @@
 ---
-title: My title
-description: "Your page can also have a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression."
+title: "I'm Amin Tahmasbi"
+description: "Research Scientist and Software Engineer <br>
+  PhD in computer science working on autonomous vehicles"
 ---
-background: "img/bg3.jpg"
-testing the index
+{{/* background: "img/bg3.jpg" */}}
