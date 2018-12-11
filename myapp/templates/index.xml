@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My title on Amin Tahmasbi</title>
+    <title>I&#39;m Amin Tahmasbi on Amin Tahmasbi</title>
     <link>https://thawing-tor-36976.herokuapp.com/</link>
-    <description>Recent content in My title on Amin Tahmasbi</description>
+    <description>Recent content in I&#39;m Amin Tahmasbi on Amin Tahmasbi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Dec 2018 22:58:13 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 10 Dec 2018 23:36:42 -0500</lastBuildDate>
     
 	<atom:link href="https://thawing-tor-36976.herokuapp.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>about me</title>
+      <link>https://thawing-tor-36976.herokuapp.com/home/about/</link>
+      <pubDate>Mon, 10 Dec 2018 23:28:05 -0500</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/home/about/</guid>
+      <description>A research scientist and software engineer with hands-on experience in autonomous vehicles and vehicle communications. My educational background is in in the context of intelligent transportation systems such as AD, ADAS, and crash avoidance systems. I have more than four years of experience in connected vehicles (V2X), Artificial Intelligence, ADAS, vehicle communications, machine learning, cyber-physical systems, and embedded systems.</description>
+    </item>
     
     <item>
       <title>example post</title>
