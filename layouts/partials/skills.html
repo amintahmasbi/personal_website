@@ -1,22 +1,71 @@
-<div id="skills" class="section section-full-screen section-skills" data-background-color="orange" style="background-image:url('/img/code_mnist.jpg')">
+<div id="skills" class="section section-skills" data-background-color="cyan" >
+
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div class="col">
-        {{/* <h2 class="title p-0">
-          {{ with $.Site.GetPage "page" "about.md" }}
-            {{with .Title }}
-              {{ . | safeHTML }}
-            {{end}}
-          {{ end }}
-        </h2>
-          <h5 class="description">
-            {{ with $.Site.GetPage "page" "about.md" }}
-              {{with .Content }}
-                {{ . | safeHTML }}
-              {{ end }}
-            {{ end }}
-          </h5> */}}
+      {{/* <div class="col"> */}}
+      {{ $skills := $.Site.GetPage "page" "skills.md"  }}
+
+      <h2 class="title text-body">
+        {{ $skills.Title }}
+      </h2>
+      <div class="card card-nav-tabs card-plain text-center">
+
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs nav-tabs-neutral justify-content-center" role="tablist" data-background-color="orange">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab">
+                Active
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">
+                <i class="now-ui-icons objects_umbrella-13"></i>
+                tab2
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">
+                tab3
+              </a>
+            </li>
+          </ul>
         </div>
+
+        <div class="card-body">
+          <div class="tab-content text-center">
+
+            <div class="tab-pane active" id="tab1" role="tabpanel">
+              {{ range $key, $value := $skills.Param "skills" }}
+              {{/* <div class="progress-container"> */}}
+
+              <span class="progress-badge text-body">{{ $key }}</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="background-color: #2e96a5;width: {{ $value }}%;">
+                  {{/* <span class="progress-value text-body">{{ $value }}%</span> */}}
+                </div>
+              </div>
+              {{/* </div> */}}
+              {{ end }}
+            </div>
+            <div class="tab-pane" id="tab2" role="tabpanel">
+              <img class="card-img-top h-auto w-25 mx-auto d-block" src="img/Sharif_University_of_Technology_logo.png" alt="Card image cap">
+              <h4 class="card-title mb-3 text-body">Sharif University of Technology</h4>
+              <h5 class="card-subtitle mb-3 text-muted">2009-2011</h5>
+              <p class="text-body">Artificial Intelligence</p>
+              <a href="http://sharif.edu/~hemmatyar/" class="card-link text-body">Advisor: Dr. Afshin Hemmatyar</a>
+            </div>
+            <div class="tab-pane" id="tab3" role="tabpanel">
+              <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
+
+
+      {{/* </div> */}}
     </div>
   </div>
+</div>

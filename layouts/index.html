@@ -13,7 +13,7 @@
 
     <div class="page-header  clear-filter" filter-color="orange">
 
-      <div class="page-header-image" data-parallax="true" style="background-image: url( '{{ (.Param "background" | default "img/header.jpg") | absURL }}' );">
+      <div class="page-header-image" data-parallax="false" style="background-image: url( '{{ (.Param "background" | default "img/header.jpg") | absURL }}' );">
       </div>
 
       <!-- {{ block "index_title" . }}
@@ -44,6 +44,7 @@
       {{ partial "about.html" . }}
       {{ partial "education.html" . }}
       {{ partial "skills.html" . }}
+
       {{/* {{ partial "experience.html" . }}
       {{ partial "projects.html" . }}
       {{ partial "publications.html" . }} */}}
