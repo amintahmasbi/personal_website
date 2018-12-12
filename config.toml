@@ -111,7 +111,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
     # tint = "black" # Only orange
     custom_css = ["css/highlight.min.css"]
     custom_js = []
-    date_format = "Wed, Dec 5, 2018"
+    # date_format = "Wed, Dec 10, 2018"
     description = "My personal website (built with Hugo and Bootstrap v4.)"
 
     # options for highlight.js (version, additional languages, and theme)

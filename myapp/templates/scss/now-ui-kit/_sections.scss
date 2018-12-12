@@ -310,6 +310,22 @@
     background-color: $black-color;
 }
 
+[data-background-color="red"]{
+    background-color: $danger-color;
+}
+
+[data-background-color="yellow"]{
+    background-color: $warning-color;
+}
+
+[data-background-color="blue"]{
+    background-color: $info-color;
+}
+
+[data-background-color="green"]{
+    background-color: darken($success-color, 5%);
+}
+
 [data-background-color]:not([data-background-color="gray"]){
     color: $white-color;
 
