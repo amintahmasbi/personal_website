@@ -11,7 +11,7 @@
 
   <div class="wrapper">
 
-    <div class="page-header  clear-filter" filter-color="orange">
+    <div class="page-header clear-filter" filter-color="orange">
 
       <div class="page-header-image" data-parallax="false" style="background-image: url( '{{ (.Param "background" | default "img/header.jpg") | absURL }}' );">
       </div>
@@ -35,16 +35,16 @@
           </p>
         </div>
       </div>
-
+      
     </div>
 
     <div class="main">
 
 
       {{ partial "about.html" . }}
+      {{ partial "experience.html" . }}
       {{ partial "education.html" . }}
       {{ partial "skills.html" . }}
-      {{ partial "experience.html" . }}
 
       {{ partial "projects.html" . }}
       {{ partial "publications.html" . }}

@@ -12,54 +12,31 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 
 # [permalinks]
     # post = "/:year/:month/:day/:slug/"
-# DefaultContentLanguage = "en"
 
 [[menu.main]]
     name = "About"
     url = "#about"
     pre = "<i class='fas fa-info'></i>"
     weight = 1
-[[menu.main]]
-    name = "Education"
-    url = "#education"
-    pre = "<i class='fas fa-graduation-cap'></i>"
-    weight = 2
-[[menu.main]]
-    name = "Skills"
-    url = "#skills"
-    pre = "<i class='fas fa-code'></i>"
-    weight = 3
+
 [[menu.main]]
     name = "Experience"
     url = "#experience"
     pre = "<i class='far fa-building'></i>"
+    weight = 2
+
+[[menu.main]]
+    name = "Education"
+    url = "#education"
+    pre = "<i class='fas fa-graduation-cap'></i>"
+    weight = 3
+
+[[menu.main]]
+    name = "Skills"
+    url = "#skills"
+    pre = "<i class='fas fa-code'></i>"
     weight = 4
 
-[[menu.main]]
-    name = "Projects"
-    url = "#projects"
-    pre = "<i class='fas fa-project-diagram'></i>"
-    weight = 5
-
-[[menu.main]]
-    name = "Publications"
-    url = "#publications"
-    pre = "<i class='fas fa-book-open'></i>"
-    weight = 6
-
-[[menu.main]]
-        name = "Contact"
-        url = "#contact"
-        pre = "<i class='fas fa-paper-plane'></i>"
-        weight = 7
-
-[[menu.main]]
-      name = "GitHub"
-      weight = 8
-      pre = "<i class='fab fa-github'></i>"
-      identifier = "github"
-      post = "external"
-      url = "https://github.com/amintahmasbi"
 
 # [[menu.main]]
 #     name = "Dropdown"
@@ -67,6 +44,37 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 #     url = "#"
 #     weight = 5
 #     identifier = "dropdown"
+
+[[menu.main]]
+    name = "Projects"
+    url = "#projects"
+    pre = "<i class='fas fa-project-diagram'></i>"
+    weight = 5
+    # parent = "dropdown"
+
+[[menu.main]]
+    name = "Publications"
+    url = "#publications"
+    pre = "<i class='fas fa-book-open'></i>"
+    weight = 6
+    # parent = "dropdown"
+
+[[menu.main]]
+        name = "Contact"
+        url = "#contact"
+        pre = "<i class='fas fa-paper-plane'></i>"
+        weight = 7
+        # parent = "dropdown"
+
+# [[menu.main]]
+#       name = "GitHub"
+#       weight = 8
+#       pre = "<i class='fab fa-github'></i>"
+#       identifier = "github"
+#       post = "external"
+#       url = "https://github.com/amintahmasbi"
+
+
 # [[menu.main]]
 #     name = "Template"
 #     pre = "<i class='now-ui-icons files_paper'></i>"
@@ -79,36 +87,43 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 #     url = "/post/"
 #     weight = 2
 #     parent = "dropdown"
-# [[menu.main]]
-#     name = "Tags"
-#     pre = "<i class='now-ui-icons shopping_tag-content'></i>"
-#     url = "/tags/"
-#     weight = 2
-#     parent = "dropdown"
 
-[[menu.footer]]
+
+[[menu.contact]]
     identifier = "twitter"
     pre = "<i class='fab fa-twitter'></i>"
     url = "https://twitter.com/amin_tahmasbi"
-    weight = 1
-[[menu.footer]]
+    post = "Follow me"
+    weight = 4
+
+[[menu.contact]]
     identifier = "github"
     pre = "<i class='fab fa-github'></i>"
     url = "https://github.com/amintahmasbi"
+    post = "My Github"
     weight = 2
 
-[[menu.footer]]
+[[menu.contact]]
     identifier = "linkedin"
     pre = "<i class='fab fa-linkedin'></i>"
     url = "https://www.linkedin.com/in/amin-tahmasbi"
+    post = "Connect"
     weight = 3
+
+[[menu.contact]]
+    identifier = "resume"
+    pre = "<i class='now-ui-icons education_paper'></i>"
+    url = "https://tahmasbi.net/resume.pdf"
+    post = "Download Resume"
+    weight = 1
+
 
 [[menu.footer]]
     identifier = "copyright"
     name = "MIT"
     pre = "<i class='fa fa-balance-scale'></i>"
     url = "https://mit-license.org/"
-    weight = 4
+    weight = 1
 
 
 [params]
@@ -118,7 +133,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
     custom_css = ["css/highlight.min.css"]
     custom_js = []
     # date_format = "Wed, Dec 10, 2018"
-    description = "My personal website <br> Proudly created with Hugo and Bootstrap 4.1"
+    description = "My personal website <br> Proudly created with Hugo and Bootstrap 4"
 
     # options for highlight.js (version, additional languages, and theme)
     highlight_version = "9.13.1"

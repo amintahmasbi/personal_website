@@ -1,5 +1,9 @@
 # Hugo + Flask + Heroku
 
+Content for [my website](https://tahmasbi.net) which includes the theme, templates, how-to.
+
+## 1. Setup Hugo and Create Static Content for the Website
+
 1. install `hugo`
 
    ```shell
@@ -14,7 +18,13 @@
    
    ```
 
-3. create a new site
+3. clone this repo
+
+   ```bash
+   $ git clone --recurse-submodules https://github.com/amintahmasbi/personal_website.git
+   ```
+
+   1. or create a new site:
 
    ```shell
    $ hugo new site personal_website
@@ -22,62 +32,74 @@
    $ git init
    ```
 
-4. Add and modify `README.md` and `.gitignore` 
+   2. Add and modify `README.md` and `.gitignore` 
 
-5. Make the first commit
+   3. Make the first commit
 
-6. Add a theme
+   4. Add a theme
 
    ```shell
    $ git submodule add https://github.com/cboettig/hugo-now-ui themes/hugo-now-ui
    $ echo 'theme = "hugo-now-ui"' >> config.toml
    ```
 
-7. Develop before deploy. Hugo does not remove generated files before building. 
+4. Develop before deploy. Hugo does not remove generated files before building. 
 
-8. Start a server that builds draft content to check and modify the content with e.g., a `dev/` directory:
-	```shell
-	$ hugo server -D -d dev
-	```
-9. Run `hugo` to deploy to the `public` folder (or any personalized `publishDir` in `config.toml` file)
+5. Start a server that builds draft content to check and modify the content with e.g., a `dev/` directory:
+  ```shell
+  $ hugo server -D -d dev
+  ```
 
-10. FLask
+6. Run `hugo` to deploy to the `public` folder (or any personalized `publishDir` in `config.toml` file)
 
-11. Flask run
+## 2. Setup Flask and Create Dynamic Content of the Website
 
-12. Flask
+_Note_: You can skip this section if you do not have any dynamic content to add.
 
-13. Install the heroku command line tools and login:
+1. FLask
+2. Flask run
+3. Flask
 
-    ```shell
-    (venv) $ sudo snap install --classic heroku
-    (venv) $ heroku login
-    ```
+##3. Setup Heroku and deploy the website 
 
-14. Clone an existing app Or 
+1. Install the heroku command line tools and login:
 
-    ```bash
-    (venv) $ heroku git:clone --recurse-submodules -a (my-unique-app-name)
-    ```
+  ```shell
+  (venv) $ sudo snap install --classic heroku
+  (venv) $ heroku login
+  ```
 
-15. Create a heroku app: (name is optional)
+2. Clone an existing app 
 
-    ```shell
-    (venv) $ heroku create (my-unique-app-name)	
-    ```
+   ```bash
+   (venv) $ heroku git:clone --recurse-submodules -a (my-unique-app-name)
+   ```
 
-16. Find and add the `hugo` buildpack:
+   1. Or create a new heroku app: (name is optional)
 
-    ```shell
-    $ heroku buildpacks:search hugo
-    $ heroku buildpacks:add roperzh/hugo
-    $ heroku config:set HUGO_VERSION=0.52
-    ```
+   ```shell
+   (venv) $ heroku create (my-unique-app-name)	
+   ```
 
-17. Finally, deploy!
+3. Find and add the `hugo` buildpack:
 
-    ```shell
-    $ git push heroku master
-    $ heroku open
-    ```
+   ```shell
+   $ heroku buildpacks:search hugo
+   $ heroku buildpacks:add roperzh/hugo
+   $ heroku config:set HUGO_VERSION=0.52
+   ```
 
+4. Commit the changes 
+
+5. Finally, deploy!
+
+   ```shell
+   $ git push heroku master
+   $ heroku open
+   ```
+
+## License 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
