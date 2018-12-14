@@ -1,20 +1,20 @@
-<div id="about" class="section section-with-background section-about"> 
+<div id="about" class="section section-with-background section-about" data-background-color="yellow">
   {{/* <div class="section-background-image" parallax="true" style="background-image: url( '{{ ( default "img/code_mnist.jpg") | absURL }}' );" data-background-color="light-blue">
   </div> */}}
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col">
-        <h2 class="title p-0">
+        <h2 class="title p-0 text-body">
           {{ with $.Site.GetPage "page" "about.md" }}
             {{with .Title }}
               {{ . | safeHTML }}
             {{end}}
           {{ end }}
         </h2>
-          <h5 class="description">
+          <h5 class="description text-body">
             {{ with $.Site.GetPage "page" "about.md" }}
               {{with .Content }}
-                {{ . | safeHTML }}
+                {{ . | replaceRE "<p>" "<p class=\"text-body\">" | safeHTML }}
               {{ end }}
             {{ end }}
           </h5>

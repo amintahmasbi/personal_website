@@ -379,6 +379,11 @@
 [data-background-color="blue"]{
   background-color: $info-color;
 }
+
+[data-background-color="grey"]{
+  background-color: $default-color;
+}
+
 [data-background-color="light-blue"]{
   background-color: rgba($info-color, .5);
 }

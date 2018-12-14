@@ -38,6 +38,10 @@
       background-color: $info-color;
   }
 
+  &[data-background-color="grey"]{
+      background-color: $default-color;
+  }
+
   &[data-background-color="green"]{
       background-color: darken($success-color, 5%);
   }

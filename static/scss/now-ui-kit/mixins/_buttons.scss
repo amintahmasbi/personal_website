@@ -64,6 +64,26 @@
             }
         }
 
+        &.btn-primary-light{
+            color: $primary-color-alert;
+
+            &:hover,
+            &:focus,
+            &:active{
+                color: $primary-states-color;
+            }
+        }
+
+        &.btn-primary-lighter{
+            color: $primary-color-opacity;
+
+            &:hover,
+            &:focus,
+            &:active{
+                color: $primary-states-color;
+            }
+        }
+
         &.btn-info{
             color: $info-color;
 
