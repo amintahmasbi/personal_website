@@ -11,7 +11,7 @@
     </nav>
     <div class="copyright" id="copyright">
       Developed by {{ $.Site.Params.AuthorName }}<br>
-      {{if .IsHome}}{{ dateFormat "Monday, Jan 2, 2006" .Page.Lastmod }}{{end}}
+      {{ dateFormat "Monday, Jan 2, 2006" .Page.Lastmod }}
 
     </div>
   </div>
