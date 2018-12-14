@@ -3,30 +3,30 @@ title: "Publications"
 date: 2018-12-10T23:28:05-05:00
 ---
 
-Feng, F.; Bao, S.; Jin, J.; Sun, W.; Saigusa, S.; __Tahmasbi-Sarvestani, A.__; Dsa, J.; "Estimation of Lead Vehicle Kinematics Using Camera-Based Data for Driver Distraction Detection", 2018 International Journal of Automotive Engineering.
+- **Estimation of Lead Vehicle Kinematics Using Camera-Based Data for Driver Distraction Detection** <br>  Feng, F.; Bao, S.; Jin, J.; Sun, W.; Saigusa, S.; _Tahmasbi-Sarvestani, A._; Dsa, J.; <br> <small>2018 International Journal of Automotive Engineering.</small>
 
-Mahjoub, H. N.; __Tahmasbi-Sarvestani, A.__; Gani, SM.O.; Fallah, Y. P.; "Composite alpha-mu Based DSRC Channel Model Using Large Data Set of RSSI Measurements", 2018 IEEE Transactions on Intelligent Transportation Systems.
+- **Composite alpha-mu Based DSRC Channel Model Using Large Data Set of RSSI Measurements** <br> Mahjoub, H. N.; _Tahmasbi-Sarvestani, A._; Gani, SM.O.; Fallah, Y. P.;  <br> <small>2018 IEEE Transactions on Intelligent Transportation Systems.</small>
 
-Kazemi, H.; Mahjoub, H. N.; __Tahmasbi-Sarvestani, A.__; Fallah, Y. P.; "A Learning-based Stochastic MPC Design for Cooperative Adaptive Cruise Control to Handle Interfering Vehicles", 2018 IEEE Transactions on Intelligent Vehicles.
+- **A Learning-based Stochastic MPC Design for Cooperative Adaptive Cruise Control to Handle Interfering Vehicles** <br> Kazemi, H.; Mahjoub, H. N.; _Tahmasbi-Sarvestani, A._; Fallah, Y. P.; <br> <small>2018 IEEE Transactions on Intelligent Vehicles.</small>
 
-Mahjoub, H. N.; __Tahmasbi-Sarvestani, A.__; Kazemi, H.; Fallah, Y. P.; "A Learning-Based Framework for Two-Dimensional Vehicle Maneuver Prediction over V2V Networks", 2017 IEEE 15th Intl Conf. on Pervasive Intelligence \& Computing.
+- **A Learning-Based Framework for Two-Dimensional Vehicle Maneuver Prediction over V2V Networks** <br> Mahjoub, H. N.; _Tahmasbi-Sarvestani, A._; Kazemi, H.; Fallah, Y. P.; <br> <small>2017 IEEE 15th Intl Conf. on Pervasive Intelligence & Computing.</small>
 
-Moradi-Pari, E.; Mahjoub, H. N.;  Kazemi, H.; Fallah, Y. P.; __Tahmasbi-Sarvestani, A.__; "Utilizing model-based communication and control for cooperative automated vehicle applications",2017 IEEE Transactions on Intelligent Vehicles.
+- **Utilizing model-based communication and control for cooperative automated vehicle applications** <br> Moradi-Pari, E.; Mahjoub, H. N.;  Kazemi, H.; Fallah, Y. P.; _Tahmasbi-Sarvestani, A._; <br> <small>2017 IEEE Transactions on Intelligent Vehicles.</small>
 
-__Tahmasbi-Sarvestani, A.__; Mahjoub, H. N.; Fallah, Y. P.; Moradi-Pari, E.; "Implementation and Evaluation of a Cooperative Vehicle-to-Pedestrian Safety Application", 2017 IEEE Intelligent Transportation Systems Magazine.
+- **Implementation and Evaluation of a Cooperative Vehicle-to-Pedestrian Safety Application** <br> _Tahmasbi-Sarvestani, A._; Mahjoub, H. N.; Fallah, Y. P.; Moradi-Pari, E.; <br> <small>2017 IEEE Intelligent Transportation Systems Magazine.</small>
 
-Gani, SM.O.; __Tahmasbi-Sarvestani, A.__; Fallah, Y. P.; Bansal, G.;   Shimizu, T.; "Evaluating Performance on Content and Rate Control Schemes for Scalable Automated Vehicles Communication", ITS World Congress 2016.	
+- **Evaluating Performance on Content and Rate Control Schemes for Scalable Automated Vehicles Communication** <br> Gani, SM.O.; _Tahmasbi-Sarvestani, A._; Fallah, Y. P.; Bansal, G.;   Shimizu, T.; <br> <small> ITS World Congress 2016.</small>
 
-Gani, SM.O.; __Tahmasbi-Sarvestani, A.__; Fanaei, M.; Fallah, Y. P.; "High Fidelity DSRC Receiver Model for ns-3 Simulation Using Large-scale Field Data", IEEE Wireless Communications and Networking Conference (WCNC 2016).
+- **High Fidelity DSRC Receiver Model for ns-3 Simulation Using Large-scale Field Data** <br> Gani, SM.O.; _Tahmasbi-Sarvestani, A._; Fanaei, M.; Fallah, Y. P.; <br> <small>IEEE Wireless Communications and Networking Conference (WCNC 2016).</small>
 
-Moradi-Pari, E.; __Tahmasbi-Sarvestani, A.__; Fallah, Y. P.; "A Hybrid Systems Approach to Modeling Real-Time Situation Awareness Component of Networked Crash Avoidance Systems", 2016 IEEE Systems Journal.
+- **A Hybrid Systems Approach to Modeling Real-Time Situation Awareness Component of Networked Crash Avoidance Systems** <br> Moradi-Pari, E.; _Tahmasbi-Sarvestani, A._; Fallah, Y. P.; <br> <small>2016 IEEE Systems Journal.</small>
 
-__Tahmasbi-Sarvestani, A.__; Fallah, Y. P.; Kulathumani, V.; "Network-aware Double-layer Distance-dependent Broadcast Protocol for VANETs", 2015 IEEE Transactions on Vehicular Technology.
-	
-__Tahmasbi-Sarvestani, A.__; Kazemi, H.; Fallah, Y. P.; Naserian, M.; Lewis, A.; "System Architecture for Cooperative Vehicle-Pedestrian Safety Applications Using DSRC Communication", SAE 2015 World Congress \& Exhibition (SAE 2015).		
-		
-Bansal, G.; Kenney, J. B.; Fanaei, M.; __Tahmasbi-Sarvestani, A.__; Fallah, Y. P.; "Software Assurance for Automotive Control Systems Using Advanced Formal Verification: An Industrial Case Study", AUVSI Symposium 2014.
+- **Network-aware Double-layer Distance-dependent Broadcast Protocol for VANETs** <br> _Tahmasbi-Sarvestani, A._; Fallah, Y. P.; Kulathumani, V.; <br> <small>2015 IEEE Transactions on Vehicular Technology.</small>
 
-Fanaei, M.; __Tahmasbi-Sarvestani, A.__; Fallah, Y. P.; Bansal, G.; Valenti, M. C.; Kenney, J. B.; "Adaptive Content Control for Communication amongst Cooperative Automated Vehicles", Sixth International Symposium on Wireless Vehicular Communications (WiVEC 2014).
+- **System Architecture for Cooperative Vehicle-Pedestrian Safety Applications Using DSRC Communication** <br> _Tahmasbi-Sarvestani, A._; Kazemi, H.; Fallah, Y. P.; Naserian, M.; Lewis, A.; <br> <small>SAE 2015 World Congress & Exhibition (SAE 2015).</small>
 
-Moradi-Pari, E.; __Tahmasbi-Sarvestani, A.__; Fallah, Y. P.; "Modeling communication and estimation processes of automated crash avoidance systems", IEEE International Systems Conference (SysCon 2013).
+- **Software Assurance for Automotive Control Systems Using Advanced Formal Verification: An Industrial Case Study** <br> Bansal, G.; Kenney, J. B.; Fanaei, M.; _Tahmasbi-Sarvestani, A._; Fallah, Y. P.; <br> <small> AUVSI Symposium 2014.</small>
+
+-  **Adaptive Content Control for Communication amongst Cooperative Automated Vehicles** <br> Fanaei, M.; _Tahmasbi-Sarvestani, A._; Fallah, Y. P.; Bansal, G.; Valenti, M. C.; Kenney, J. B.;<br> <small>Sixth International Symposium on Wireless Vehicular Communications (WiVEC 2014).</small>
+
+- **Modeling communication and estimation processes of automated crash avoidance systems** <br> Moradi-Pari, E.; _Tahmasbi-Sarvestani, A._; Fallah, Y. P.; <br> <small>IEEE International Systems Conference (SysCon 2013).</small>
