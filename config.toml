@@ -48,8 +48,14 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
     weight = 6
 
 [[menu.main]]
+        name = "Contact"
+        url = "#contact"
+        pre = "<i class='fas fa-paper-plane'></i>"
+        weight = 7
+
+[[menu.main]]
       name = "GitHub"
-      weight = 7
+      weight = 8
       pre = "<i class='fab fa-github'></i>"
       identifier = "github"
       post = "external"
@@ -112,7 +118,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
     custom_css = ["css/highlight.min.css"]
     custom_js = []
     # date_format = "Wed, Dec 10, 2018"
-    description = "My personal website (built with Hugo and Bootstrap v4.)"
+    description = "My personal website <br> Proudly created with Hugo and Bootstrap 4.1"
 
     # options for highlight.js (version, additional languages, and theme)
     highlight_version = "9.13.1"
