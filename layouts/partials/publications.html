@@ -5,20 +5,31 @@
 
     <h2 class="text-center text-muted py-3">{{.Title}}</h2>
     <!-- timeline item 1 -->
+    {{$list := (findRE  "<p.*?>(.|\n)*?</p>" .Content)}}
 
-    {{range (findRE  "<p.*?>(.|\n)*?</p>" .Content) }}
+    {{$len := (len $list)}}
+
+    {{range $index, $element := $list }}
     <div class="row">
       <!-- timeline item 1 left dot -->
       <div class="col-auto text-center flex-column d-none d-sm-flex">
         <div class="row h-50">
+          {{ if (eq $index 0) }}
+          <div class="col">&nbsp;</div>
+          {{ else }}
           <div class="col border-right">&nbsp;</div>
+          {{end}}
           <div class="col">&nbsp;</div>
         </div>
         <h5 class="m-2">
           <span class="badge badge-pill bg-primary">&nbsp;</span>
         </h5>
         <div class="row h-50">
+          {{ if (eq $index (sub $len 1)) }}
+          <div class="col">&nbsp;</div>
+          {{else}}
           <div class="col border-right">&nbsp;</div>
+          {{end}}
           <div class="col">&nbsp;</div>
         </div>
       </div>
@@ -27,7 +38,7 @@
         <div class="card">
           <div class="card-body">
             {{/* <div class="float-right text-muted">Mon, Jan 9th 2019 7:00 AM</div> */}}
-            <h5 class="card-title my-0 text-muted">{{ . | safeHTML }}</h5>
+            <h5 class="card-title my-0 text-muted">{{ $element | safeHTML }}</h5>
             {{/* <p class="card-text">Welcome to the campus, introduction and get started with the tour.</p> */}}
           </div>
         </div>
@@ -36,6 +47,6 @@
     <!--/row-->
     {{end}}
     {{end}}
-    </div>
-    <!--container-->
+  </div>
+  <!--container-->
 </div>

@@ -35,4 +35,9 @@
   {{ range .Site.Params.custom_css -}}
     <link rel="stylesheet" href="{{ . | absURL }}">
   {{- end }}
+
+  <!-- Google Recaptcha (avoid race condition) -->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+
 </head>

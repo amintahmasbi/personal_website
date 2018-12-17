@@ -49,7 +49,7 @@ title = "Skills"
     "name"  = "OpenCV"
     "val"   = "60"
   [framework_skills.Sklearn]
-    "name"  = "Scikit-Learn"
+    "name"  = "Sklearn"
     "val"   = "90"
   [framework_skills.Docker]
     "name"  = "Docker"
@@ -58,7 +58,7 @@ title = "Skills"
     "name"  = "Pandas"
     "val"   = "90"
   [framework_skills.Numpy]
-    "name"  = "Numpy/Scipy"
+    "name"  = "Numpy"
     "val"   = "90"
   [framework_skills.NS3]
     "name"  = "ns-3"
@@ -67,7 +67,7 @@ title = "Skills"
     "name"  = "SUMO"
     "val"   = "60"
   [framework_skills.Jupyter]
-    "name"  = "Jupyter Notebook"
+    "name"  = "Jupyter"
     "val"   = "90"
   [framework_skills.Git]
     "name"  = "Git"
@@ -85,10 +85,10 @@ title = "Skills"
     "name"  = "Eclipse"
     "val"   = "60"
   [framework_skills.Weka]
-    "name"  = "Mercurial"
+    "name"  = "Weka"
     "val"   = "30"
   [framework_skills.CANalyzer]
-    "name"  = "Mercurial"
+    "name"  = "CANalyzer"
     "val"   = "85"
 
 [database_skills]
@@ -110,7 +110,7 @@ title = "Skills"
     "name"  = "TinyOS"
     "val"   = "80"
   [os_skills.Denso]
-    "name"  = "Denso-WSU-RTOS"
+    "name"  = "Denso-RTOS"
     "val"   = "80"
 
 [protocol_skills]
@@ -136,7 +136,7 @@ title = "Skills"
     "name"  = "Socket Programming"
     "val"   = "80"
   [protocol_skills.Shell]
-    "name"  = "Bash/Zsh/Shell scripting"
+    "name"  = "Shell scripting"
     "val"   = "80"
   [protocol_skills.Driver]
     "name"  = "Device Drivers"

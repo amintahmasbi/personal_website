@@ -88,6 +88,11 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 #     weight = 2
 #     parent = "dropdown"
 
+[[menu.email]]
+    identifier = "mailto"
+    pre = "<i class='fas fa-envelope'></i>"
+    post = "Email me"
+    weight = 5
 
 [[menu.contact]]
     identifier = "twitter"
