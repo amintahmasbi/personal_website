@@ -10,7 +10,6 @@
 
       <div class="text-center col-md-12">
         <nav>
-
           {{ range .Site.Menus.contact }}
 
           <a target="_blank" href="{{ .URL | relURL }}" class="btn btn-neutral btn-default btn-icon  btn-round btn-lg" rel="tooltip" title="{{ .Post }}">{{ .Pre }} {{ .Name }}</a>
@@ -19,7 +18,9 @@
 
           {{ range .Site.Menus.email }}
 
-          <button style="font-size: 2em;" data-toggle="modal" data-target="#emailModal"  class="btn  btn-neutral btn-default btn-icon btn-round btn-lg" rel="tooltip" title="{{ .Post }}">{{ .Pre }} {{ .Name }}</button>
+
+          <button style="font-size: 2em;" data-toggle="modal" data-target="#emailModal" class="btn  btn-neutral btn-default btn-icon btn-round btn-lg" rel="tooltip" title="{{ .Post }}">{{ .Pre }} {{ .Name }}</button>
+
 
           <!-- Modal -->
           <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
@@ -32,32 +33,29 @@
                   </button>
                 </div>
                 <div class="modal-body text-body">
+                  <form>
                   <div class="g-recaptcha" data-sitekey="6LcBO4IUAAAAAKS27aP1IHh3KQO-EyR_AwV7MtZ_"></div>
+                    {{/* <button id="emailButton" class="btn text-body">Show it!</button> */}}
+                    <a id="email_placeholder" class="text-info" href="javascript:show_email('#email_placeholder')">[Please click here]</a>
+                  </form>
+                  {{/* </span> */}}
 
                 </div>
                 <div class="modal-footer justify-content-center">
                   <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                  {{/* <button type="button" class="btn btn-primary">Save changes</button> */}}
                 </div>
               </div>
             </div>
           </div>
 
           {{ end }}
-          {{/* <script>
-          grecaptcha.ready(function() {
-            grecaptcha.execute('6Lep14EUAAAAAM-UTmnjI6DcPvmKa1UmZRTXKwhC', {action: 'action_name'})
-            .then(function(token) {
-              // Verify the token on the server.
-            });
-          });
-        </script> */}}
-      </nav>
+
+        </nav>
+
+      </div>
 
     </div>
 
   </div>
-
-</div>
 
 </div>
