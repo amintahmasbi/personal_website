@@ -32,30 +32,30 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body text-body">
-                  <form>
-                  <div class="g-recaptcha" data-sitekey="6LcBO4IUAAAAAKS27aP1IHh3KQO-EyR_AwV7MtZ_"></div>
-                    {{/* <button id="emailButton" class="btn text-body">Show it!</button> */}}
-                    <a id="email_placeholder" class="text-info" href="javascript:show_email('#email_placeholder')">[Please click here]</a>
-                  </form>
-                  {{/* </span> */}}
 
-                </div>
-                <div class="modal-footer justify-content-center">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <div class="modal-body text-body">
+                  <div class="row justify-content-center">
+                    <form id="email_form">
+                      <div class=" g-recaptcha" data-sitekey="6LcBO4IUAAAAAKS27aP1IHh3KQO-EyR_AwV7MtZ_"></div>
+                      <a id="email_placeholder" class="text-info" href="javascript:show_email('#email_placeholder')">[Please click here]</a>
+                    </form>
+                  </div>
+                  <div>
+                    <div class="modal-footer justify-content-center">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+
+              {{ end }}
+
+            </nav>
+
           </div>
 
-          {{ end }}
-
-        </nav>
+        </div>
 
       </div>
 
     </div>
-
-  </div>
-
-</div>

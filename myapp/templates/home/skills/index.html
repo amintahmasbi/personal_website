@@ -257,11 +257,11 @@
     
     
     function show_email(destElem) {
-      $.post('/show_email',$('form').serialize()).done(function(response) {
+      $.post('/show_email',$('#email_form').serialize()).done(function(response) {
         $(destElem).text(response['email']);
         $(destElem).prop("href", "mailto:"+response['email']);
       }).fail(function() {
-        $(destElem).text("Error: Could not contact server.");
+        $(destElem).text("Error: Please verify the CAPTCHA.");
       });
     }
     </script>
