@@ -1,7 +1,5 @@
 """route rules for flask
 """
-# import json
-
 import requests
 import os
 from functools import wraps
@@ -61,7 +59,7 @@ def check_recaptcha(f):
             data=data)
 
             result = r.json()
-            
+
             if result['success']:
                 request.recaptcha_is_valid = True
             else:
