@@ -47,7 +47,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
 
 [[menu.main]]
     name = "Projects"
-    url = "#projects"
+    url = "#portfolio"
     pre = "<i class='fas fa-project-diagram'></i>"
     weight = 5
     # parent = "dropdown"
