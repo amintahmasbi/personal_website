@@ -33,6 +33,23 @@
             {{ . | safeHTML }}
             {{ end }}
           </p>
+          <!-- Contact me -->
+          <div class="my-5 py-5">
+          <nav>
+            {{ range .Site.Menus.contact }}
+
+            <a target="_blank" href="{{ .URL | relURL }}" class="btn btn-neutral btn-primary btn-icon  btn-round btn-lg" rel="tooltip" title="{{ .Post }}">{{ .Pre }} {{ .Name }}</a>
+
+            {{ end }}
+
+            {{ range .Site.Menus.email }}
+
+            <button style="font-size: 2em;" data-toggle="modal" data-target="#emailModal" class="btn  btn-neutral btn-primary btn-icon btn-round btn-lg" rel="tooltip" title="{{ .Post }}">{{ .Pre }} {{ .Name }}</button>
+
+            {{ end }}
+
+          </nav>
+        </div>
         </div>
       </div>
 
