@@ -21,81 +21,86 @@
 <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
 <script src="{{"js/now-ui-kit.js?v=1.2.0" | relURL }}" type="text/javascript"></script>
 {{/* <script type="text/javascript">
-    $(document).ready(function() {
-        // the body of this function is in assets/js/now-ui-kit.js
-        nowuiKit.initSliders();
-    });
+$(document).ready(function() {
+// the body of this function is in assets/js/now-ui-kit.js
+nowuiKit.initSliders();
+});
 
-    function scrollToDownload() {
+function scrollToDownload() {
 
-        if ($('.section-download').length != 0) {
-            $("html, body").animate({
-                scrollTop: $('.section-download').offset().top
-            }, 1000);
-        }
-    }
+if ($('.section-download').length != 0) {
+$("html, body").animate({
+scrollTop: $('.section-download').offset().top
+}, 1000);
+}
+}
 </script> */}}
 
 {{/* <!--  Google Maps Plugin    -->
 <script  src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> */}}
 
-    {{ range .Site.Params.custom_js }}
-    <script src="{{ "/js/" | relURL }}{{ . }}"></script>
-    {{ end }}
+{{ range .Site.Params.custom_js }}
+<script src="{{ "/js/" | relURL }}{{ . }}"></script>
+{{ end }}
 
 
-      <!-- Code highlighting -->
-    {{ if  not .Params.nocode }}
-      {{ $v := .Site.Params.highlight_version | default "9.12.0" }}
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/highlight.min.js"></script>
+<!-- Code highlighting -->
+{{ if  not .Params.nocode }}
+{{ $v := .Site.Params.highlight_version | default "9.12.0" }}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/highlight.min.js"></script>
 
-      {{ range .Site.Params.highlight_languages }}
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/languages/{{ . }}.min.js"></script>
-      {{ end }}
+{{ range .Site.Params.highlight_languages }}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/languages/{{ . }}.min.js"></script>
+{{ end }}
 
-      {{ range .Params.highlight_languages }}
-      {{/* Do not double-include languages that are in both .Site.Params and .Params.
-           If Hugo ever grows a "union" function for set union, this range clause can be merged with the one above. */}}
-        {{ if not (in $.Site.Params.highlight_languages .) }}
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/languages/{{ . }}.min.js"></script>
+{{ range .Params.highlight_languages }}
+{{/* Do not double-include languages that are in both .Site.Params and .Params.
+If Hugo ever grows a "union" function for set union, this range clause can be merged with the one above. */}}
+{{ if not (in $.Site.Params.highlight_languages .) }}
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ $v }}/languages/{{ . }}.min.js"></script>
 
-        {{ end }}
-      {{ end }}
-      <script>hljs.initHighlightingOnLoad();</script>
-    {{ end }}
+{{ end }}
+{{ end }}
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
 
-    <!-- LaTeX math rendering -->
-    {{ if not .Params.nomath }}
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
-    <script type="text/javascript" asyncn src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!-- LaTeX math rendering -->
+{{ if not .Params.nomath }}
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+<script type="text/javascript" asyncn src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-    <script>
-    // $(function() {
-    //   $('#emailButton').click(function() {
-    //     var myData = "This is my data string."
-    //     $.ajax({
-    //       url: '/showmail',
-    //       data: {'myData':myData},
-    //       type: 'POST',
-    //       success: function(response) {
-    //         console.log(response);
-    //       },
-    //       error: function(error) {
-    //         console.log(error);
-    //       }
-    //     });
-    //   });
-    // });
-    function show_email(destElem) {
-      $.post('/show_email',$('#email_form').serialize()).done(function(response) {
-        $(destElem).text(response['email']);
-        $(destElem).prop("href", "mailto:"+response['email']);
-      }).fail(function() {
-        $(destElem).text("Error: Please verify the CAPTCHA.");
-      });
-    }
-    </script>
+<script type="text/javascript">
 
-    {{ end }}
+$('#pill_cavs').click(function () {
+  // var pill_cavs_image = "<div class='section-background-image' data-parallax='true' style='background-image: url({{ `img/night_traffic.jpg` | absURL }});'></div>"
+  // $('#portfolio').addClass('section-with-background');
+  // $('#portfolio').prepend(pill_cavs_image)
+  $("#portfolio .section-background-image").attr("style","background-image: url('{{ `img/night_traffic.jpg` | absURL }}');")
+
+});
+
+$('#pill_software_eng').click(function () {
+  $("#portfolio .section-background-image").attr("style","background-image: url('{{ `img/code_mnist.jpg` | absURL }}');")
+
+});
+
+$('#pill_data_science').click(function () {
+  $("#portfolio .section-background-image").attr("style","background-image: url('{{ `img/hand_chart.jpg` | absURL }}');")
+
+
+});
+
+{{/* reCAPTCHA */}}
+function show_email(destElem) {
+  $.post('/show_email',$('#email_form').serialize()).done(function(response) {
+    $(destElem).text(response['email']);
+    $(destElem).prop("href", "mailto:"+response['email']);
+  }).fail(function() {
+    $(destElem).text("Error: Please verify the CAPTCHA.");
+  });
+}
+</script>
+
+{{ end }}
