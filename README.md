@@ -1,6 +1,6 @@
 # Hugo + Flask + Heroku
 
-Content for [my website](https://tahmasbi.net) which includes the theme, templates, how-to.
+Content for [my website](https://www.tahmasbi.net) which includes the theme, templates, and how-to.
 
 ## 1. Setup Hugo and Create Static Content for the Website
 
