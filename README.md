@@ -15,7 +15,7 @@ Content for [my website](https://www.tahmasbi.net) which includes the theme, tem
    ```shell
    $ hugo version
    Hugo Static Site Generator v0.52/extended linux/amd64 BuildDate: 2018-11-28T18:27:35Z
-   
+
    ```
 
 3. clone this repo
@@ -32,7 +32,7 @@ Content for [my website](https://www.tahmasbi.net) which includes the theme, tem
    $ git init
    ```
 
-   2. Add and modify `README.md` and `.gitignore` 
+   2. Add and modify `README.md` and `.gitignore`
 
    3. Make the first commit
 
@@ -43,7 +43,7 @@ Content for [my website](https://www.tahmasbi.net) which includes the theme, tem
    $ echo 'theme = "hugo-now-ui"' >> config.toml
    ```
 
-4. Develop before deploy. Hugo does not remove generated files before building. 
+4. Develop before deploy. Hugo does not remove generated files before building.
 
 5. Start a server that builds draft content to check and modify the content with e.g., a `dev/` directory:
   ```shell
@@ -60,7 +60,7 @@ _Note_: You can skip this section if you do not have any dynamic content to add.
 2. Flask run
 3. Flask
 
-##3. Setup Heroku and deploy the website 
+## 3. Setup Heroku and deploy the website 
 
 1. Install the heroku command line tools and login:
 
@@ -69,7 +69,7 @@ _Note_: You can skip this section if you do not have any dynamic content to add.
   (venv) $ heroku login
   ```
 
-2. Clone an existing app 
+2. Clone an existing app
 
    ```bash
    (venv) $ heroku git:clone --recurse-submodules -a (my-unique-app-name)
@@ -78,7 +78,7 @@ _Note_: You can skip this section if you do not have any dynamic content to add.
    1. Or create a new heroku app: (name is optional)
 
    ```shell
-   (venv) $ heroku create (my-unique-app-name)	
+   (venv) $ heroku create (my-unique-app-name)
    ```
 
 3. Find and add the `hugo` buildpack:
@@ -89,7 +89,7 @@ _Note_: You can skip this section if you do not have any dynamic content to add.
    $ heroku config:set HUGO_VERSION=0.52
    ```
 
-4. Commit the changes 
+4. Commit the changes
 
 5. Finally, deploy!
 
@@ -98,7 +98,7 @@ _Note_: You can skip this section if you do not have any dynamic content to add.
    $ heroku open
    ```
 
-## License 
+## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
