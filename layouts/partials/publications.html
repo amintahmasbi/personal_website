@@ -5,7 +5,7 @@
 
     <h2 class="text-center text-muted py-3">{{.Title}}</h2>
     <!-- timeline item 1 -->
-    {{$list := (findRE  "<p.*?>(.|\n)*?</p>" .Content)}}
+    {{$list := (findRE  "<div.*?article.*?>(.|\n)*?</div>" .Content)}}
 
     {{$len := (len $list)}}
 
@@ -37,9 +37,7 @@
       <div class="col">
         <div class="card">
           <div class="card-body">
-            {{/* <div class="float-right text-muted">Mon, Jan 9th 2019 7:00 AM</div> */}}
-            <h5 class="card-title my-0 text-muted">{{ $element | safeHTML }}</h5>
-            {{/* <p class="card-text">Welcome to the campus, introduction and get started with the tour.</p> */}}
+            {{ $element | safeHTML }}
           </div>
         </div>
       </div>

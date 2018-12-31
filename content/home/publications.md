@@ -3,6 +3,16 @@ title: "Publications"
 date: 2018-12-10T23:28:05-05:00
 ---
 
+{{% article title="**Estimation of Lead Vehicle Kinematics Using Camera-Based Data for Driver Distraction Detection**" %}}
+Feng, F.; Bao, S.; Jin, J.; Sun, W.; Saigusa, S.; _Tahmasbi-Sarvestani, A._; Dsa, J.;
+<br> <small>2018 International Journal of Automotive Engineering.</small>
+{{% /article %}}
+
+{{% article title="**Composite alpha-mu Based DSRC Channel Model Using Large Data Set of RSSI Measurements**" %}}
+Mahjoub, H. N.; _Tahmasbi-Sarvestani, A._; Gani, SM.O.; Fallah, Y. P.;
+<br> <small>2018 IEEE Transactions on Intelligent Transportation Systems.</small>
+{{% /article %}}
+
 - **Estimation of Lead Vehicle Kinematics Using Camera-Based Data for Driver Distraction Detection** <br>  Feng, F.; Bao, S.; Jin, J.; Sun, W.; Saigusa, S.; _Tahmasbi-Sarvestani, A._; Dsa, J.; <br> <small>2018 International Journal of Automotive Engineering.</small>
 
 - **Composite alpha-mu Based DSRC Channel Model Using Large Data Set of RSSI Measurements** <br> Mahjoub, H. N.; _Tahmasbi-Sarvestani, A._; Gani, SM.O.; Fallah, Y. P.;  <br> <small>2018 IEEE Transactions on Intelligent Transportation Systems.</small>
