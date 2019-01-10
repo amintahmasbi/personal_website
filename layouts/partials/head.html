@@ -36,6 +36,8 @@
     <link rel="stylesheet" href="{{ . | absURL }}">
   {{- end }}
 
+  {{ template "_internal/google_analytics.html" . }}
+
   <!-- Google Recaptcha (avoid race condition) -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
