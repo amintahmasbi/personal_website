@@ -5,7 +5,7 @@ theme = "hugo-now-ui"
 publishDir="myapp/templates"
 
 enableGitInfo = true
-googleAnalytics = ""
+googleAnalytics = "UA-49920810-1"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
