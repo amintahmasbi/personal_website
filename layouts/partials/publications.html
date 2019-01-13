@@ -47,7 +47,7 @@
               {{/* </h5> */}}
             </div>
 
-            <div class="card-body py-0">
+            <div class="card-body pt-0">
               {{/* {{ printf "%#v" $element}} */}}
               {{ index (findRE "<p.*?>(.|\n)*?</p.*?>" $element 1) 0 | safeHTML }}
             </div>
