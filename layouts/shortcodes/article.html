@@ -1,7 +1,12 @@
 <div class="article">
+
   <h5 class="card-title my-0 text-muted">
-    <i class='fas fa-book'></i>
+    <strong>&nbsp;article_number-</strong>
     {{ .Get "title" | markdownify }}
   </h5>
-  <p> {{.Inner}} </p>
+
+  <p class="card-text collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">
+     {{.Inner | markdownify}}
+  </p>
+
 </div>
