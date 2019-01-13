@@ -13,12 +13,12 @@
         <div class="card-header">
           <ul class="nav nav-tabs nav-tabs-neutral justify-content-around" role="tablist" data-background-color="grey">
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#programming" role="tab">
+              <a class="nav-link active" data-toggle="tab" href="#programming" role="tab">
                 Programming
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#software" role="tab">
+              <a class="nav-link" data-toggle="tab" href="#software" role="tab">
                 {{/* <i class="now-ui-icons objects_umbrella-13"></i> */}}
                 Frameworks
               </a>
@@ -44,11 +44,25 @@
         <div class="card-body">
           <div class="tab-content">
 
-            <div class="tab-pane" id="programming" role="tabpanel">
+            <div class="tab-pane active" id="programming" role="tabpanel">
               {{/* <img class="card-img-top h-auto w-25 mx-auto d-block" src="img/Sharif_University_of_Technology_logo.png" alt="Card image cap"> */}}
               <h5 class="card-title mb-3 text-body text-center">Programming Languages</h5>
 
+              <div class="row">
               {{ range sort ($skills.Param "programming_skills") "val" "desc" }}
+              <div class="col-4 col-md-3 text-center">
+                {{ if (gt .val 84) }}
+                <button class="btn btn-primary text-body text-truncate btn-sm btn-block">{{ .name }}</button>
+                {{ else if (gt .val 59) }}
+                <button class="btn btn-primary-light text-body text-truncate btn-sm btn-block">{{ .name }}</button>
+                {{ else }}
+                <button class="btn btn-primary-lighter text-body text-truncate btn-sm btn-block">{{ .name }}</button>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+
+              {{/* {{ range sort ($skills.Param "programming_skills") "val" "desc" }}
               <div>
                 <span class="progress-badge text-body ">{{ .name }}</span>
                 <div class="progress">
@@ -71,13 +85,13 @@
                   </div>
                 </div>
               </div>
-              {{ end }}
+              {{ end }} */}}
               {{/* <h5 class="card-subtitle mb-3 text-muted">2009-2011</h5>
               <p class="text-body">Artificial Intelligence</p>
               <a href="http://sharif.edu/~hemmatyar/" class="card-link text-body">Advisor: Dr. Afshin Hemmatyar</a> */}}
             </div>
 
-            <div class="tab-pane active" id="software" role="tabpanel">
+            <div class="tab-pane" id="software" role="tabpanel">
               {{/* <img class="card-img-top h-auto w-25 mx-auto d-block" src="img/Sharif_University_of_Technology_logo.png" alt="Card image cap"> */}}
               <h5 class="card-title mb-3 text-body text-center">Frameworks and Softwares</h5>
 
