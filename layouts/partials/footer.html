@@ -8,7 +8,7 @@
         </li>
         {{ end }}
       </ul>
-      <div class="copyright">
+      <div class="copyright text-left">
         This project has {{ len .Site.RegularPages }} pages and is available on
         <a target="_blank" href="https://github.com/amintahmasbi/personal_website" class="text-warning">Github</a>.
       </div>
@@ -16,12 +16,10 @@
 
 
 
-    <div class="copyright" id="copyright">
+    <div class="copyright text-right" id="copyright">
       Developed by {{ $.Site.Params.AuthorName }}<br>
       {{/* {{ dateFormat "Monday, Jan 2, 2006" .Page.Lastmod }} */}}
       {{ .Content }}
-
-
     </div>
   </div>
 </footer>
