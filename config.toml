@@ -8,7 +8,7 @@ enableGitInfo = true
 googleAnalytics = "UA-49920810-1"
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
-disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # [permalinks]
     # post = "/:year/:month/:day/:slug/"
