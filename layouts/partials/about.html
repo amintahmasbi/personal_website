@@ -6,36 +6,68 @@
     <div class="button-container">
       {{ range .Site.Menus.contact }}
       {{ $item :=  . }}
-        {{with (eq .Identifier "resume")}}
-          <a target="_blank" href="{{ $item.URL | relURL }}" class="btn btn-primary  btn-round btn-lg">{{ $item.Post }}</a>
-        {{end}}
+      {{with (eq .Identifier "resume")}}
+      <a target="_blank" href="{{ $item.URL | relURL }}" class="btn btn-primary  btn-round btn-lg">{{ $item.Post }}</a>
+      {{end}}
 
       {{ end }}
     </div>
 
     <div class="row justify-content-center align-items-center">
 
-      <div class="col">
-
-        <h2 class="title p-0 text-body">
-          {{ with $.Site.GetPage "page" "about.md" }}
-          {{with .Title }}
-          {{ . | safeHTML }}
-          {{end}}
-          {{ end }}
-        </h2>
-        <h5 class="description text-body">
-          {{ with $.Site.GetPage "page" "about.md" }}
-          {{with .Content }}
-          {{ . | replaceRE "<p>" "<p class=\"text-body\">" | safeHTML }}
-            {{ end }}
-            {{ end }}
-          </h5>
-
-        </div>
-
-      </div>
+      {{ with $.Site.GetPage "page" "about.md" }}
+      <h2 class="title text-center text-body">
+        {{with .Title }}
+        {{ . | safeHTML }}
+        {{end}}
+      </h2>
+      {{ end }}
 
     </div>
 
+    <div class="team">
+      <div class="row">
+        {{ with $.Site.GetPage "page" "about.md" }}
+        {{with .Content }}
+        {{/* {{ printf "%#v" . }} */}}
+
+        {{$list := (findRE  "<h.*?>(.|\n)*?</p>" .)}}
+
+        {{range $index, $element := $list }}
+
+        <div class="col-md-4">
+          <div class="team-player">
+            <div class="nav-align-center">
+              <ul class="nav nav-pills nav-pills-primary nav-pills-just-icons">
+                <li class="nav-item">
+                  <a class="nav-link active">
+                    {{ index (findRE "<i.*?>(.|\n)*?</i.*?>" $element 1) 0 | markdownify }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+            {{/* <img src="../assets/img/ryan.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised"> */}}
+            <h4 class="title text-body">
+              {{ index (findRE "<h.*?>(.|\n)*?</h.*?>" $element 1) 0 | plainify }}
+            </h4>
+            {{/* <p class="category text-primary">Designer</p> */}}
+            {{/* <p class="description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+            <a href="#">links</a> for people to be able to follow them outside the site.</p> */}}
+
+            <h5 class="description text-body">
+              {{ $element | replaceRE "<h.*?>(.|\n)*?</h.*?>" "" | replaceRE "<i.*?>(.|\n)*?</i.*?>" "" | markdownify }}
+            </h5>
+
+            {{/* <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
+            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a> */}}
+          </div>
+        </div>
+        {{ end }}
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
   </div>
+
+</div>
