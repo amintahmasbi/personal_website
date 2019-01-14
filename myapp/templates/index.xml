@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Personal Website</title>
+      <link>https://thawing-tor-36976.herokuapp.com/projects/cs/personal_website/</link>
+      <pubDate>Sun, 13 Jan 2019 22:32:38 -0500</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/projects/cs/personal_website/</guid>
+      <description>&lt;p&gt;I use Hugo, Bootstrap V4, FLask, and Heroku to build my personal website.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Flower Classification</title>
+      <link>https://thawing-tor-36976.herokuapp.com/projects/data/flower_classification/</link>
+      <pubDate>Sun, 13 Jan 2019 22:25:09 -0500</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/projects/data/flower_classification/</guid>
+      <description>&lt;p&gt;In this project, I first developed a code for an image classifier built with PyTorch and then I converted it into a command line application.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Vehicle Detection</title>
       <link>https://thawing-tor-36976.herokuapp.com/projects/cavs/vehicle_detection/</link>
       <pubDate>Sun, 13 Jan 2019 21:38:31 -0500</pubDate>
@@ -45,6 +63,15 @@
       
       <guid>https://thawing-tor-36976.herokuapp.com/projects/cavs/traffic_sign_classification/</guid>
       <description>&lt;p&gt;In this project, convolutional neural networks are used to classify traffic signs.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finding Donors for CharityML</title>
+      <link>https://thawing-tor-36976.herokuapp.com/projects/data/finding_donors/</link>
+      <pubDate>Sun, 13 Jan 2019 16:19:17 -0500</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/projects/data/finding_donors/</guid>
+      <description>&lt;p&gt;In this project, several supervised algorithms of choice are used to accurately model individuals&amp;rsquo; income using data collected from the 1994 U.S. Census.&lt;/p&gt;</description>
     </item>
     
     <item>

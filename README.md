@@ -1,4 +1,4 @@
-# Hugo + Flask + Heroku
+# Hugo + Bootstrap V4 + Flask + Heroku
 
 Content for [my website](https://www.tahmasbi.net) which includes the theme, templates, and how-to.
 
@@ -60,7 +60,7 @@ _Note_: You can skip this section if you do not have any dynamic content to add.
 2. Flask run
 3. Flask
 
-## 3. Setup Heroku and deploy the website 
+## 3. Setup Heroku and deploy the website
 
 1. Install the heroku command line tools and login:
 

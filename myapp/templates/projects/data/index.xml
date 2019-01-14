@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science Projects on Amin Tahmasbi</title>
+    <link>https://thawing-tor-36976.herokuapp.com/projects/data/</link>
+    <description>Recent content in Data Science Projects on Amin Tahmasbi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jan 2019 16:18:57 -0500</lastBuildDate>
+    
+	<atom:link href="https://thawing-tor-36976.herokuapp.com/projects/data/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flower Classification</title>
+      <link>https://thawing-tor-36976.herokuapp.com/projects/data/flower_classification/</link>
+      <pubDate>Sun, 13 Jan 2019 22:25:09 -0500</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/projects/data/flower_classification/</guid>
+      <description>&lt;p&gt;In this project, I first developed a code for an image classifier built with PyTorch and then I converted it into a command line application.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finding Donors for CharityML</title>
+      <link>https://thawing-tor-36976.herokuapp.com/projects/data/finding_donors/</link>
+      <pubDate>Sun, 13 Jan 2019 16:19:17 -0500</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/projects/data/finding_donors/</guid>
+      <description>&lt;p&gt;In this project, several supervised algorithms of choice are used to accurately model individuals&amp;rsquo; income using data collected from the 1994 U.S. Census.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
