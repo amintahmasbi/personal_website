@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://thawing-tor-36976.herokuapp.com/projects/cavs/vehicle_detection/</loc>
+    <lastmod>2019-01-13T21:42:56-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thawing-tor-36976.herokuapp.com/projects/cavs/advanced_lane_lines/</loc>
+    <lastmod>2019-01-13T21:42:56-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thawing-tor-36976.herokuapp.com/projects/cavs/behavioral_cloning/</loc>
+    <lastmod>2019-01-13T21:42:56-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thawing-tor-36976.herokuapp.com/projects/cavs/traffic_sign_classification/</loc>
+    <lastmod>2019-01-13T21:42:56-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thawing-tor-36976.herokuapp.com/projects/cavs/</loc>
+    <lastmod>2019-01-13T21:42:56-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thawing-tor-36976.herokuapp.com/projects/cavs/finding_lane_lines/</loc>
+    <lastmod>2019-01-13T21:42:56-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thawing-tor-36976.herokuapp.com/home/about/</loc>
     <lastmod>2019-01-12T23:04:15-05:00</lastmod>
   </url>
@@ -21,6 +51,11 @@
   <url>
     <loc>https://thawing-tor-36976.herokuapp.com/</loc>
     <lastmod>2018-12-16T20:05:53-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thawing-tor-36976.herokuapp.com/projects/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

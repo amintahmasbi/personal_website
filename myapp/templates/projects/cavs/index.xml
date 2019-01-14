@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>I&#39;m Amin Tahmasbi on Amin Tahmasbi</title>
-    <link>https://thawing-tor-36976.herokuapp.com/</link>
-    <description>Recent content in I&#39;m Amin Tahmasbi on Amin Tahmasbi</description>
+    <title>Autonomous Driving Porjects on Amin Tahmasbi</title>
+    <link>https://thawing-tor-36976.herokuapp.com/projects/cavs/</link>
+    <description>Recent content in Autonomous Driving Porjects on Amin Tahmasbi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Dec 2018 20:05:53 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 13 Jan 2019 16:16:10 -0500</lastBuildDate>
     
-	<atom:link href="https://thawing-tor-36976.herokuapp.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thawing-tor-36976.herokuapp.com/projects/cavs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -54,35 +54,6 @@
       
       <guid>https://thawing-tor-36976.herokuapp.com/projects/cavs/finding_lane_lines/</guid>
       <description>&lt;p&gt;Detecting lane lines in images using Python and OpenCV.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://thawing-tor-36976.herokuapp.com/home/about/</link>
-      <pubDate>Mon, 10 Dec 2018 23:28:05 -0500</pubDate>
-      
-      <guid>https://thawing-tor-36976.herokuapp.com/home/about/</guid>
-      <description>Self-driving Car Engineer  Build and investigate Computer Vision and Deep Learning applications for Autonomous Driving and Advanced Driver-Assistance Systems.
-Data Scientist  Collect, store, transform, aggregate, and optimize data from various sensors for connected and automated vehicle applications.
-Software Engineer  Develope programs in Python and C++ to interface with vehicles, build data pipelines, and demonstrate research ideas.</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://thawing-tor-36976.herokuapp.com/home/publications/</link>
-      <pubDate>Mon, 10 Dec 2018 23:28:05 -0500</pubDate>
-      
-      <guid>https://thawing-tor-36976.herokuapp.com/home/publications/</guid>
-      <description>&amp;nbsp;article_number- Estimation of Lead Vehicle Kinematics Using Camera-Based Data for Driver Distraction Detection  Feng, F.; Bao, S.; Jin, J.; Sun, W.; Saigusa, S.; Tahmasbi-Sarvestani, A.; Dsa, J.; 2018 International Journal of Automotive Engineering.  &amp;nbsp;article_number- Composite alpha-mu Based DSRC Channel Model Using Large Data Set of RSSI Measurements  Mahjoub, H. N.; Tahmasbi-Sarvestani, A.; Gani, SM.O.; Fallah, Y. P.; 2018 IEEE Transactions on Intelligent Transportation Systems.  &amp;nbsp;article_number- A Learning-based Stochastic MPC Design for Cooperative Adaptive Cruise Control to Handle Interfering Vehicles  Kazemi, H.</description>
-    </item>
-    
-    <item>
-      <title>Skills</title>
-      <link>https://thawing-tor-36976.herokuapp.com/home/skills/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://thawing-tor-36976.herokuapp.com/home/skills/</guid>
-      <description></description>
     </item>
     
   </channel>
