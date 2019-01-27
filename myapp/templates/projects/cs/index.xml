@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Engineering Projects on Amin Tahmasbi</title>
+    <link>https://thawing-tor-36976.herokuapp.com/projects/cs/</link>
+    <description>Recent content in Software Engineering Projects on Amin Tahmasbi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jan 2019 16:22:50 -0500</lastBuildDate>
+    
+	<atom:link href="https://thawing-tor-36976.herokuapp.com/projects/cs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Personal Website</title>
+      <link>https://thawing-tor-36976.herokuapp.com/projects/cs/personal_website/</link>
+      <pubDate>Sun, 13 Jan 2019 22:32:38 -0500</pubDate>
+      
+      <guid>https://thawing-tor-36976.herokuapp.com/projects/cs/personal_website/</guid>
+      <description>&lt;p&gt;I use Hugo, Bootstrap V4, FLask, and Heroku to build my personal website.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

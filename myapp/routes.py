@@ -42,6 +42,11 @@ def send_img(path):
     file_dir = safe_join(app.config['publishDir'], 'img')
     return send_from_directory(file_dir, path)
 
+@app.route('/static/<path:path>')
+def send_files(path):
+    """Redirect binary files form Hugo"""
+    file_dir = safe_join(app.config['publishDir'], 'static')
+    return send_from_directory(file_dir, path)
 
 def check_recaptcha(func):
     """
@@ -83,12 +88,3 @@ def show_email():
         response = jsonify({'email': my_email})
 
     return response
-
-
-
-
-# @app.route('/', methods=['POST'])
-# # @check_recaptcha
-# def email_modal():
-#     print("get called")
-            # return render_template('search.html')

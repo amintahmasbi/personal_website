@@ -118,7 +118,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 [[menu.contact]]
     identifier = "resume"
     pre = "<i class='now-ui-icons education_paper'></i>"
-    url = "https://tahmasbi.net/resume.pdf"
+    url = "static/resume.pdf"
     post = "Download Resume"
     weight = 1
 
