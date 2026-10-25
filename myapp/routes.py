@@ -73,12 +73,14 @@ def check_recaptcha(func):
                     'response': request.form.get('g-recaptcha-response'),
                     'remoteip': request.access_route[0]}
 
-            res = requests.post("https://www.google.com/recaptcha/api/siteverify",
-                                data=data)
+            try:
+                res = requests.post("https://www.google.com/recaptcha/api/siteverify",
+                                    data=data, timeout=10)
+                result = res.json()
+            except (requests.RequestException, ValueError):
+                result = {}
 
-            result = res.json()
-
-            request.recaptcha_is_valid = bool(result['success'])
+            request.recaptcha_is_valid = bool(result.get('success'))
 
         return func(*args, **kwargs)
 
@@ -89,10 +91,7 @@ def check_recaptcha(func):
 def show_email():
     """Handle the email show request"""
 
-    response = None
-    my_email = os.environ['MY_EMAIL']
+    if not request.recaptcha_is_valid:
+        return jsonify({'error': 'CAPTCHA verification failed'}), 400
 
-    if request.recaptcha_is_valid:
-        response = jsonify({'email': my_email})
-
-    return response
+    return jsonify({'email': os.environ['MY_EMAIL']})
